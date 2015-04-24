@@ -10,4 +10,4 @@ token = strsplit(string,'.m.o');
 % then split at '.' to get a string of trailing job information (for job arrays)
 token2 = strsplit(token{end},'.');
 % finally, get rid of leading 'o' and remove any trailing whitespace (for single jobs)
-jobID = strtrim(token2{1});
+jobID = strtrim(token2{2}(2:end));

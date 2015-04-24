@@ -1,7 +1,7 @@
 function [jobIDs, cmd, cmdOut] = submitMore(scriptNames, nJobs, varargin)
 % [jobIDs, cmd, cmdOut] = submitMore(scriptNames, nJobs, [submitCommand='submit'])
 
-% scriptNames  - cell array of string, need to have '.m' appended
+% scriptNames  - cell array of string, WITHOUT '.m' appended
 % nJobs        - number of jobs for each script, array same size as
 %                scriptNames or size 1
 % submitCmd    - string, either 'submit', 'submit_short', 'submit_long',
